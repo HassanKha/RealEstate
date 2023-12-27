@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO)
   });
 
 const app = express();
-
+const _dirname = path.resolve();
 app.use(express.json())
 
 app.use(cookieParser())
